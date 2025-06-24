@@ -3,59 +3,29 @@
 import React, { useState } from 'react';
 import texts from '../data/texts.json';
 import photos from '../data/photos.json';
-import listing from "../data/listing.json";
-import { convertToFileName } from "../app/utils/strings";
-import CardsList from "../components/CardsList";
+import { getAppUrl } from '../app/utils/strings.js';
 
 function MainContent() {
   const [imageLoaded, setImageLoaded] = useState(false);
   const slogan = texts.slogan;
   const mainPhotoUrl = `../../images/photos/${photos.mainPhotoUrl}`;
-  
-  // Get property categories from listing data
-  const propertyCategories = listing.amentiesCategories["Property category"] || [];
-  
-  // Format property categories for CardsList
-  const categoryCards = propertyCategories.map((category) => {
-    const fileName = convertToFileName(category);
-    const imageUrl = `/images/property_categories/${fileName}.jpg`;
-    return {
-      imageUrl,
-      title: category,
-      description: category,
-    };
-  });
+
+  const handleBookClick = () => {
+    const url = getAppUrl();
+    window.open(url, '_blank', 'noopener,noreferrer');
+  };
 
   return (
-    <main className="App-main" style={{ backgroundImage: `url(${mainPhotoUrl})`, backgroundSize: 'cover', backgroundPosition: 'center' }}>
-      {/* Property info table at top-left */}
-      <div className="property-info-container">
-        <table className="property-info-table">
-          <tbody>
-            <tr>
-              <th>You are renting: {listing.propertyType}</th>
-            </tr>
-            <tr>
-              <th>Bedrooms {listing.counters.bedrooms}, Beds {listing.counters.beds}, Sleeps {listing.counters.guests}</th>
-            </tr>
-            <tr>
-              <th>Bathrooms {listing.counters.bathrooms}</th>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      
-      <section className="image-container" style={{ backgroundColor: 'transparent' }}>
-        <button className="book-button">Book It</button>
+    <main className="App-main">
+      <section className="image-container">
+        <img
+          src={mainPhotoUrl}
+          alt="Main Content"
+          className="main-image"
+          onLoad={() => setImageLoaded(true)}
+        />
+        <button className="book-button" onClick={handleBookClick}>Book It</button>
       </section>
-      
-      {/* Category badges at bottom left */}
-      <div className="property-categories-container">
-        {propertyCategories.length > 0 && (
-          <CardsList cards={categoryCards} listTitle="" badgeStyle={true} />
-        )}
-      </div>
-      
       <div className="fullwidth-content-text">
         <h2>
           {slogan.split("").map((char, index) => (

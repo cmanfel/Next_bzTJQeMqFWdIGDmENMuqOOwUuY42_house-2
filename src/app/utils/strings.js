@@ -1,3 +1,5 @@
+import listingData from '../../data/listing.json';
+
 export function convertToFileName(inputString) {
     // Convert the string to lowercase
     let fileName = inputString.toLowerCase();
@@ -10,4 +12,9 @@ export function convertToFileName(inputString) {
     fileName = fileName.replace(/^_+|_+$/g, '');
   
     return fileName;
+}
+
+export function getAppUrl() {
+    const { uid, id: listingId } = listingData;
+    return `https://app.hostrapp.com/reservation?uid=${uid}&listingId=${listingId}`;
 }
