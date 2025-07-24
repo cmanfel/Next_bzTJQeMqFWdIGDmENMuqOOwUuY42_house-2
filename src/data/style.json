@@ -1,1 +1,12 @@
-{"--main-bg-color":"#003366","--text-color":"#ffffff","--link-color":"#0099cc","--nav-bg-color":"#004080","--nav-hover-bg-color":"#336699","--button-bg-color":"#005f99","--button-hover-bg-color":"#007acc","--content-bg-color":"rgba(0, 51, 102, 0.5)","--default-text-color":"#cccccc","--highlight-section-bg-color":"#005f99"}
+{
+  "--main-bg-color": "#003f7f",
+  "--text-color": "#ffffff",
+  "--link-color": "#1e90ff",
+  "--nav-bg-color": "#002d5c",
+  "--nav-hover-bg-color": "#005aa1",
+  "--button-bg-color": "#ffc107",
+  "--button-hover-bg-color": "#ffca28",
+  "--content-bg-color": "rgba(0, 63, 127, 0.5)",
+  "--default-text-color": "#e0e0e0",
+  "--highlight-section-bg-color": "#0073e6"
+}

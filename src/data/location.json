@@ -1,1 +1,131 @@
-{"address":"2800 Northeast 16th Avenue, Wilton Manors, FL, USA","geoCode":{"lat":26.1625044,"lng":-80.1262402},"mapImageUrl":"https://storage.googleapis.com/hostrapp_public/BlmK2BhX1kM1icOUMWzXYR8wQUO2/villa/map.png","googleMapsUrl":"","nearbyCategories":[{"category":"Dining","place_type":"restaurant","description":"Wilton Manors offers a diverse culinary scene within walking distance. Enjoy upscale French cuisine at La Crepe Bistro (0.4 miles), savor authentic Italian flavors at Louie Bossi Ristorante (0.6 miles), or indulge in modern American fare at The Blue Moon (0.7 miles).","notable_places":["La Crepe Bistro","Louie Bossi Ristorante","The Blue Moon"],"image_prompt":"A photorealistic image of a charming outdoor patio at a restaurant in Wilton Manors, Florida, with fairy lights and lush greenery.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-mM4P98I7mgukdQjy7vvn6CS1.png?st=2025-02-02T18%3A26%3A35Z&se=2025-02-02T20%3A26%3A35Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T00%3A42%3A45Z&ske=2025-02-03T00%3A42%3A45Z&sks=b&skv=2024-08-04&sig=bEYHV/fTy3zM2AYOxViwoJmISXkf3eZ6NPaeJzMx6Wg%3D"},{"category":"Coffee","place_type":"cafe","description":"Start your day with a caffeine fix from local cafes like The Grind (0.3 miles), offering specialty coffee and pastries, or Crema Coffee & Tea (0.5 miles), known for its cozy atmosphere and unique blends.","notable_places":["The Grind","Crema Coffee & Tea"],"image_prompt":"A photorealistic image of a modern cafe in Wilton Manors, Florida, with exposed brick walls, comfortable seating, and a variety of coffee drinks on display.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-TOJQld49ZcUwttrLtPG6nCfZ.png?st=2025-02-02T18%3A26%3A47Z&se=2025-02-02T20%3A26%3A47Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T00%3A43%3A14Z&ske=2025-02-03T00%3A43%3A14Z&sks=b&skv=2024-08-04&sig=GAUF5PbNtruDgT5etgTSkbPPB%2Bbd2h9QsjaDV/zzslQ%3D"},{"category":"Attractions","place_type":"tourist_attraction","description":"Immerse yourself in the vibrant culture of Wilton Manors. Explore the Stonewall National Museum & Archives (0.8 miles), dedicated to LGBTQ+ history, or visit the scenic Colohatchee Park (0.9 miles), perfect for picnics and nature walks.","notable_places":["Stonewall National Museum & Archives","Colohatchee Park"],"image_prompt":"A photorealistic image of the Stonewall National Museum & Archives in Wilton Manors, Florida, with a rainbow flag prominently displayed.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-h9b3bKpQl7RXi0tJOUq8Hwoo.png?st=2025-02-02T18%3A27%3A05Z&se=2025-02-02T20%3A27%3A05Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T00%3A34%3A35Z&ske=2025-02-03T00%3A34%3A35Z&sks=b&skv=2024-08-04&sig=fGWOsgn9tFwOAnO/weVHPYoQWvk4jdaf90OZGgbGFsY%3D"},{"category":"Activities","place_type":"amusement_park","description":"Embark on thrilling adventures at Xtreme Action Park (1.1 miles), featuring go-karts, mini-golf, and laser tag. For a unique experience, visit the Escape Room Fort Lauderdale (1.2 miles) and test your problem-solving skills.","notable_places":["Xtreme Action Park","Escape Room Fort Lauderdale"],"image_prompt":"A photorealistic image of a group of people having fun at Xtreme Action Park in Wilton Manors, Florida, riding go-karts and playing mini-golf.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-UUfxW5YsMcTk8zJiPMS4tDdP.png?st=2025-02-02T18%3A27%3A19Z&se=2025-02-02T20%3A27%3A19Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T00%3A30%3A27Z&ske=2025-02-03T00%3A30%3A27Z&sks=b&skv=2024-08-04&sig=QPgutjqTO68yzW8mhi46xnRI3gNEmDunCtterRuv5i0%3D"},{"category":"Recreational","place_type":"park","description":"Relax and rejuvenate at Hugh Taylor Birch State Park (1.3 miles), offering stunning natural landscapes, hiking trails, and kayaking opportunities. For a more urban experience, visit Wilton Manors' Village Green (0.5 miles), ideal for leisurely strolls and people-watching.","notable_places":["Hugh Taylor Birch State Park","Wilton Manors' Village Green"],"image_prompt":"A photorealistic image of a couple enjoying a picnic at Hugh Taylor Birch State Park in Wilton Manors, Florida, with a view of the Intracoastal Waterway.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-PzVi25nJWGJcsXXRVp9s91wD.png?st=2025-02-02T18%3A27%3A33Z&se=2025-02-02T20%3A27%3A33Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T01%3A02%3A47Z&ske=2025-02-03T01%3A02%3A47Z&sks=b&skv=2024-08-04&sig=HHMPyAhgmbL/c4YfvloVn9pOOe8kHaxodstiWtdo7EY%3D"},{"category":"Shopping","place_type":"shopping_mall","description":"Treat yourself to a shopping spree at The Galleria at Fort Lauderdale (1.5 miles), a renowned mall with high-end boutiques and department stores. For unique finds and local crafts, explore the Wilton Manors Antique Market (0.7 miles).","notable_places":["The Galleria at Fort Lauderdale","Wilton Manors Antique Market"],"image_prompt":"A photorealistic image of the interior of The Galleria at Fort Lauderdale, Florida, showcasing luxury brands and a stylish atmosphere.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-8yCN5E2jmvVUjIQWk2DOXn6z.png?st=2025-02-02T18%3A27%3A44Z&se=2025-02-02T20%3A27%3A44Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T00%3A31%3A06Z&ske=2025-02-03T00%3A31%3A06Z&sks=b&skv=2024-08-04&sig=dhAKeQm8m1iYIeVLOhpSOf%2BiERkokPGThzeE%2BjsEc98%3D"},{"category":"Convenience","place_type":"grocery_or_supermarket","description":"Stock up on essentials and groceries at Publix Super Market (0.4 miles), conveniently located within walking distance. For a wider selection, visit Whole Foods Market (1.0 miles).","notable_places":["Publix Super Market","Whole Foods Market"],"image_prompt":"A photorealistic image of a well-stocked grocery store in Wilton Manors, Florida, with fresh produce, a variety of packaged goods, and friendly staff.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-e23q54e5awvaWgzct2Gjk6xk.png?st=2025-02-02T18%3A27%3A57Z&se=2025-02-02T20%3A27%3A57Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T00%3A42%3A08Z&ske=2025-02-03T00%3A42%3A08Z&sks=b&skv=2024-08-04&sig=BxHUSvf%2Balv43y2PVGZaKTktqeyveY/uaeylUMMaOfM%3D"},{"category":"Transportation Hubs","place_type":"airport","description":"Fort Lauderdale-Hollywood International Airport (FLL) is situated approximately 8 miles away, offering convenient domestic and international flights. For train services, the nearest station is Fort Lauderdale Amtrak Station (11 miles away).","notable_places":["Fort Lauderdale-Hollywood International Airport (FLL)","Fort Lauderdale Amtrak Station"],"image_prompt":"A photorealistic image of the Fort Lauderdale-Hollywood International Airport (FLL) terminal, with airplanes taking off and landing.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-1wQyiRMfKUokZgvuloOE6ulR.png?st=2025-02-02T18%3A28%3A12Z&se=2025-02-02T20%3A28%3A12Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T00%3A26%3A48Z&ske=2025-02-03T00%3A26%3A48Z&sks=b&skv=2024-08-04&sig=34t3/jPW8jdjuU0LifrfMTRvv2vC6gcSBYcof2Sg9pc%3D"},{"category":"Other Services","place_type":"spa","description":"Indulge in pampering treatments at The Spa at The Westin Fort Lauderdale (1.4 miles), offering a range of massages, facials, and body treatments. For a more holistic approach, visit The Yoga Studio of Wilton Manors (0.6 miles), providing yoga classes and meditation sessions.","notable_places":["The Spa at The Westin Fort Lauderdale","The Yoga Studio of Wilton Manors"],"image_prompt":"A photorealistic image of a luxurious spa treatment room at The Spa at The Westin Fort Lauderdale, Florida, with candles, soft lighting, and a serene atmosphere.","imageUrl":"https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-RL7aE2eEJuwXgc3d04ALH1fu.png?st=2025-02-02T18%3A28%3A26Z&se=2025-02-02T20%3A28%3A26Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=d505667d-d6c1-4a0a-bac7-5c84a87759f8&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-02-02T00%3A41%3A45Z&ske=2025-02-03T00%3A41%3A45Z&sks=b&skv=2024-08-04&sig=jXKbRvgbEubhZWfp72NQR%2BWVoImo8RFkOkKzdcfWqUM%3D"}]}
+{
+  "address": "2200 North Ocean Boulevard, Myrtle Beach, SC, USA",
+  "geoCode": {
+    "lat": 33.7041962,
+    "lng": -78.8691662
+  },
+  "mapImageUrl": "https://storage.googleapis.com/hostrapp_public/bzTJQeMqFWdIGDmENMuqOOwUuY42/house-2/map.png",
+  "googleMapsUrl": "",
+  "nearbyCategories": [
+    {
+      "category": "Family-Friendly Restaurants & Casual Dining Options",
+      "place_type": "restaurant",
+      "description": "Enjoy a variety of dining experiences within a short walk or drive. Many restaurants are located along Ocean Boulevard, offering options like 'Pier 14 Restaurant & Lounge' and casual beachfront eateries. Average drive time: 5-10 minutes.",
+      "notable_places": [
+        "Pier 14 Restaurant & Lounge",
+        "Sea Captain's House",
+        "Dirty Don's Oyster Bar and Grill"
+      ],
+      "image_prompt": "Photorealistic image of a family enjoying dinner at a beachfront restaurant in Myrtle Beach, with the ocean visible in the background. Warm lighting and a lively atmosphere.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-scU1MalaUI6n5CnOXx2uRfCY.png?st=2025-07-24T12%3A48%3A39Z&se=2025-07-24T14%3A48%3A39Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=8b33a531-2df9-46a3-bc02-d4b1430a422c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-24T09%3A48%3A47Z&ske=2025-07-25T09%3A48%3A47Z&sks=b&skv=2024-08-04&sig=P85ys62Of4RCL9zsI7/SdMs8zP8lKksLdZoy54f4YOk%3D"
+    },
+    {
+      "category": "Local Coffee Shops and Breakfast Spots",
+      "place_type": "cafe",
+      "description": "Start your day with a caffeine fix and delicious breakfast pastries. Several cafes like 'Dunkin'' are nearby. Walking distance: 5-15 minutes, or a quick drive.",
+      "notable_places": [
+        "Dunkin'",
+        "Starbucks",
+        "The Roasted Bean"
+      ],
+      "image_prompt": "Photorealistic image of a cozy coffee shop interior in Myrtle Beach, with patrons enjoying coffee and pastries. Sunlight streaming through the windows and a relaxed atmosphere.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-ITH9HmHm4MzP3Vny2Ay7w2pC.png?st=2025-07-24T12%3A48%3A56Z&se=2025-07-24T14%3A48%3A56Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=8b33a531-2df9-46a3-bc02-d4b1430a422c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-23T18%3A13%3A26Z&ske=2025-07-24T18%3A13%3A26Z&sks=b&skv=2024-08-04&sig=%2BTNXw3c0G2MWWTTvTVZwV05d3Jbxqok8%2BBAYbBoUq/Q%3D"
+    },
+    {
+      "category": "Popular Myrtle Beach Tourist Attractions",
+      "place_type": "tourist_attraction",
+      "description": "Explore famous landmarks like 'Broadway at the Beach' and the 'Myrtle Beach SkyWheel'. Driving distance: 10-20 minutes.",
+      "notable_places": [
+        "Broadway at the Beach",
+        "Myrtle Beach SkyWheel",
+        "Ripley's Aquarium of Myrtle Beach"
+      ],
+      "image_prompt": "Photorealistic aerial view of Broadway at the Beach in Myrtle Beach, showcasing the attractions, shops, and restaurants. Bright sunny day with clear blue skies.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-ICVHn1oRtaqNIACps23cmL3C.png?st=2025-07-24T12%3A49%3A12Z&se=2025-07-24T14%3A49%3A12Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=8b33a531-2df9-46a3-bc02-d4b1430a422c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-24T08%3A41%3A31Z&ske=2025-07-25T08%3A41%3A31Z&sks=b&skv=2024-08-04&sig=7Bdwol9STZUlfARhzoGimyL0hJoHuUo4%2B242dzZM984%3D"
+    },
+    {
+      "category": "Fun Recreational Activities & Water Sports",
+      "place_type": "amusement_park",
+      "description": "Engage in exciting activities such as mini-golf, water parks, and jet ski rentals. 'Myrtle Waves Water Park' is a popular choice. Driving distance: 15-25 minutes.",
+      "notable_places": [
+        "Myrtle Waves Water Park",
+        "Family Kingdom Amusement Park",
+        "Radical Ridez Jet Ski Rentals"
+      ],
+      "image_prompt": "Photorealistic image of people enjoying various water activities at a water park in Myrtle Beach. Smiling faces, colorful slides, and a sense of fun and excitement.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-djRGsAtW6Lz0q8uan73Tf5qT.png?st=2025-07-24T12%3A49%3A30Z&se=2025-07-24T14%3A49%3A30Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=8b33a531-2df9-46a3-bc02-d4b1430a422c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-23T17%3A35%3A43Z&ske=2025-07-24T17%3A35%3A43Z&sks=b&skv=2024-08-04&sig=qBn803ozF1cEVqcpdkdtffwBATmVqoPzqrZSewkxqvw%3D"
+    },
+    {
+      "category": "Convenient Grocery Stores and Essential Shopping",
+      "place_type": "grocery_store",
+      "description": "Stock up on vacation essentials at nearby grocery stores like 'Piggly Wiggly'. Driving distance: 5-10 minutes.",
+      "notable_places": [
+        "Piggly Wiggly",
+        "Walmart Supercenter",
+        "CVS Pharmacy"
+      ],
+      "image_prompt": "Photorealistic image of a well-stocked grocery store aisle in Myrtle Beach, featuring fresh produce, snacks, and beverages commonly purchased by vacationers.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-KSG1xcRqTqGCo4JtkmdfwuFg.png?st=2025-07-24T12%3A49%3A46Z&se=2025-07-24T14%3A49%3A46Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=8b33a531-2df9-46a3-bc02-d4b1430a422c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-23T15%3A09%3A47Z&ske=2025-07-24T15%3A09%3A47Z&sks=b&skv=2024-08-04&sig=hhOPOopmrPmjeR6Zed6UeYA7bhuEOXbPUfRzHY9d1Mo%3D"
+    },
+    {
+      "category": "Myrtle Beach's Diverse Shopping Centers and Boutiques",
+      "place_type": "shopping_mall",
+      "description": "Find souvenirs, apparel, and gifts at shopping centers and boutiques. 'Coastal Grand Mall' offers a wide variety of stores. Driving distance: 15-20 minutes.",
+      "notable_places": [
+        "Coastal Grand Mall",
+        "Barefoot Landing",
+        "Tanger Outlets Myrtle Beach Hwy 17"
+      ],
+      "image_prompt": "Photorealistic image of a vibrant shopping mall exterior in Myrtle Beach, with shoppers strolling and browsing storefronts. Sunny weather and a bustling atmosphere.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-Bxr3K4aI5sGeBYSgLX0wJlu9.png?st=2025-07-24T12%3A49%3A57Z&se=2025-07-24T14%3A49%3A57Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=8b33a531-2df9-46a3-bc02-d4b1430a422c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-24T12%3A41%3A56Z&ske=2025-07-25T12%3A41%3A56Z&sks=b&skv=2024-08-04&sig=W7SvQmMTOiwkOwYNMtUzRkH84EelOMhPJrPj1TAw614%3D"
+    },
+    {
+      "category": "Transportation Options: Car Rentals and Public Transit",
+      "place_type": "car_rental",
+      "description": "Access convenient transportation options with car rental agencies near the airport. Driving distance to the airport: 20-30 minutes.",
+      "notable_places": [
+        "Hertz",
+        "Enterprise Rent-A-Car",
+        "Avis Car Rental"
+      ],
+      "image_prompt": "Photorealistic image of a car rental agency office in Myrtle Beach, with a customer picking up their rental car. The agency's logo is visible and the scene is welcoming.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-zRETGOTHcFmkgCQnykCIvh47.png?st=2025-07-24T12%3A50%3A13Z&se=2025-07-24T14%3A50%3A13Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=8b33a531-2df9-46a3-bc02-d4b1430a422c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-24T05%3A08%3A46Z&ske=2025-07-25T05%3A08%3A46Z&sks=b&skv=2024-08-04&sig=bFn4xuXNwaAsKIwTNaWqoRWvBPyXJRGHLcyF7zePY2Q%3D"
+    },
+    {
+      "category": "Essential Vacation Services: Pharmacies and Healthcare",
+      "place_type": "pharmacy",
+      "description": "Easily access pharmacies like 'CVS Pharmacy' for any medical needs. Walking/Driving distance: 5-10 minutes.",
+      "notable_places": [
+        "CVS Pharmacy",
+        "Walgreens",
+        "Conway Medical Center"
+      ],
+      "image_prompt": "Photorealistic image of a pharmacy storefront in Myrtle Beach, with a welcoming entrance and visible signage. Clean and well-lit environment.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-FJxgZ9BrGl76bStlWPxr1QPB.png?st=2025-07-24T12%3A50%3A27Z&se=2025-07-24T14%3A50%3A27Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=8b33a531-2df9-46a3-bc02-d4b1430a422c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-24T06%3A10%3A58Z&ske=2025-07-25T06%3A10%3A58Z&sks=b&skv=2024-08-04&sig=3co/bjITx16rT9uKCr5rWCWZXPoa9e%2B5rO3sGGYfzFU%3D"
+    },
+    {
+      "category": "Golf Courses and Golfing Activities",
+      "place_type": "golf_course",
+      "description": "Enjoy world-class golfing at nearby golf courses. 'Pine Lakes Country Club' is a great option. Driving distance: 10-20 minutes.",
+      "notable_places": [
+        "Pine Lakes Country Club",
+        "Dunes Golf and Beach Club",
+        "Grande Dunes Golf Club"
+      ],
+      "image_prompt": "Photorealistic image of a beautiful golf course in Myrtle Beach, with lush green fairways, blue skies, and a golfer teeing off. Focus on the scenic landscape.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-TuoEJ1augrY4i7PXZ9IoPgt6.png?st=2025-07-24T12%3A50%3A41Z&se=2025-07-24T14%3A50%3A41Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=8b33a531-2df9-46a3-bc02-d4b1430a422c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-24T12%3A59%3A48Z&ske=2025-07-25T12%3A59%3A48Z&sks=b&skv=2024-08-04&sig=/91416imWxvRbXkPGL2H30aLGRv6KU4e25yDrsJkyDM%3D"
+    },
+    {
+      "category": "Beach Access Points and Oceanfront Activities",
+      "place_type": "natural_feature",
+      "description": "Direct access to the beach! Enjoy swimming, sunbathing, and watersports right outside your door. The main beach access points are directly across Ocean Boulevard. Walking distance: Less than 1 minute.",
+      "notable_places": [
+        "22nd Ave N Beach Access",
+        "21st Ave N Beach Access",
+        "23rd Ave N Beach Access"
+      ],
+      "image_prompt": "Photorealistic image of a sunny beach scene in Myrtle Beach, with families enjoying the sand and surf. Bright blue water, clear skies, and beach umbrellas dotting the landscape.",
+      "imageUrl": "https://oaidalleapiprodscus.blob.core.windows.net/private/org-mZ6lijKy7jBlPtkrsrp7fcyl/user-cUN1z1n3ziDzkoNWF0Y97bNo/img-80CLRI0Ne0uJwzs6f62eJt6v.png?st=2025-07-24T12%3A51%3A00Z&se=2025-07-24T14%3A51%3A00Z&sp=r&sv=2024-08-04&sr=b&rscd=inline&rsct=image/png&skoid=8b33a531-2df9-46a3-bc02-d4b1430a422c&sktid=a48cca56-e6da-484e-a814-9c849652bcb3&skt=2025-07-24T03%3A58%3A48Z&ske=2025-07-25T03%3A58%3A48Z&sks=b&skv=2024-08-04&sig=jIPvs0Z2VSmGhCTVvRdmmnHMcfVzb/MPambrsJxb8kY%3D"
+    }
+  ]
+}
