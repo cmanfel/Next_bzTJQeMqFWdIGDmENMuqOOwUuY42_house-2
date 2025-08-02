@@ -122,11 +122,7 @@ html, body {
   height: 100%; /* Ensure it takes full height of parent */
 }
 
-.main-image {
-  width: 100%;
-  height: auto;
-  display: block;
-}
+/* .main-image styles removed - now using background image on .App-main */
 
 .content-text {
   position: absolute;

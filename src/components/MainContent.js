@@ -16,14 +16,21 @@ function MainContent() {
   };
 
   return (
-    <main className="App-main">
+    <main 
+      className="App-main"
+      style={{
+        backgroundImage: imageLoaded ? `url(${mainPhotoUrl})` : 'none'
+      }}
+    >
+      {/* Hidden image for load detection */}
+      <img
+        src={mainPhotoUrl}
+        alt=""
+        style={{ display: 'none' }}
+        onLoad={() => setImageLoaded(true)}
+      />
+      
       <section className="image-container">
-        <img
-          src={mainPhotoUrl}
-          alt="Main Content"
-          className="main-image"
-          onLoad={() => setImageLoaded(true)}
-        />
         <button className="book-button" onClick={handleBookClick}>Book It</button>
       </section>
       <div className="fullwidth-content-text">
