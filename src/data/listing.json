@@ -1,1 +1,145 @@
-{"id":"villa","uid":"BlmK2BhX1kM1icOUMWzXYR8wQUO2","amentiesCategories":{"Services":["Luggage dropoff allowed","Long term stays allowed","Cleaning available during stay"],"Office amenities":["Wifi","Dedicated workspace"],"Heating and cooling amenities":["Heating","Ceiling fan","Air conditioning"],"Outdoor amenities":["Backyard","Outdoor furniture","Sun loungers","Patio or balcony","Beach essentials","BBQ grill"],"Kitchen amenities":["Blender","Freezer","Baking sheet","Barbecue utensils","Coffee","Coffee maker","Cooking basics","Hot water kettle","Dishwasher","Dishes and silverware","Dining table","Kitchen","Toaster","Stove","Refrigerator","Oven","Microwave","Wine glasses"],"Entertainment amenities":["TV"],"Family amenities":["Pack and play/Travel crib"],"Bedroom and laundry amenities":["Dryer","Clothing storage","Bed linens","Drying rack for clothing","Essentials","Hangers","Washer","Safe","Room-darkening shades","Mosquito net","Iron"],"Bathroom amenities":["Bathtub","Body soap","Hair dryer","Hot water","Hair conditioner","Cleaning products","Shower gel","Shampoo"],"Basic amenities":["Essentials","Dryer","Air conditioning","Heating","Hot water","Kitchen","TV","Wifi","Washer"],"Property category":["Tropical","Beach","Luxe","Design","Historical homes"],"Location amenities":["Laundromat nearby","Private entrance"],"Safety amenities":["First aid kit","Fire extinguisher","Carbon monoxide alarm","Smoke alarm"],"Parking and facilities":["Free parking on premises","Free street parking","Hot tub","Pool","Private living room","Single level home"]},"propertyType":"Entire Place","propertyCategories":[],"address":"2800 Northeast 16th Avenue, Wilton Manors, FL, USA","counters":{"beds":5,"guests":8,"bedrooms":3,"bathrooms":3},"createdAt":"2025-01-22T21:40:54.232Z","updatedAt":"2025-02-03T03:00:17.694Z"}
+{
+  "id": "house-2",
+  "uid": "bzTJQeMqFWdIGDmENMuqOOwUuY42",
+  "amentiesCategories": {
+    "Outdoor amenities": [
+      "Backyard",
+      "BBQ grill",
+      "Beach essentials",
+      "Fire pit",
+      "Outdoor dining area",
+      "Outdoor furniture",
+      "Outdoor kitchen",
+      "Patio or balcony",
+      "Sun loungers"
+    ],
+    "Services": [
+      "Long term stays allowed"
+    ],
+    "Parking and facilities": [
+      "Free parking on premises",
+      "Free street parking",
+      "Gym",
+      "Hot tub",
+      "Pool",
+      "Private living room"
+    ],
+    "Entertainment amenities": [
+      "Books and reading material",
+      "Climbing wall",
+      "Ethernet connection",
+      "Exercise equipment",
+      "Ping pong table",
+      "Record player",
+      "Sound system",
+      "TV"
+    ],
+    "Property category": [
+      "A-frames",
+      "Amazing views",
+      "Accessibility",
+      "Beach",
+      "Beachfront"
+    ],
+    "Bedroom and laundry amenities": [
+      "Bed linens",
+      "Clothing storage",
+      "Dryer",
+      "Drying rack for clothing",
+      "Essentials",
+      "Extra pillows and blankets",
+      "Hangers",
+      "Iron",
+      "Mosquito net",
+      "Room-darkening shades",
+      "Safe",
+      "Washer"
+    ],
+    "Type of place": [
+      "An entire place."
+    ],
+    "Office amenities": [
+      "Dedicated workspace",
+      "Wifi"
+    ],
+    "Basic amenities": [
+      "Air conditioning",
+      "Dryer",
+      "Essentials",
+      "Heating",
+      "Hot water",
+      "Wifi",
+      "Washer",
+      "TV",
+      "Kitchen"
+    ],
+    "Location amenities": [
+      "Beach access",
+      "Laundromat nearby",
+      "Private entrance",
+      "Waterfront"
+    ],
+    "Bathroom amenities": [
+      "Bathtub",
+      "Cleaning products",
+      "Hair conditioner",
+      "Hair dryer",
+      "Hot water",
+      "Shampoo",
+      "Shower gel"
+    ],
+    "Safety amenities": [
+      "Carbon monoxide alarm",
+      "Fire extinguisher",
+      "First aid kit",
+      "Smoke alarm"
+    ],
+    "Kitchen amenities": [
+      "Baking sheet",
+      "Barbecue utensils",
+      "Blender",
+      "Bread maker",
+      "Coffee",
+      "Coffee maker",
+      "Cooking basics",
+      "Kitchen",
+      "Toaster",
+      "Stove",
+      "Refrigerator",
+      "Oven",
+      "Microwave",
+      "Dining table",
+      "Dishes and silverware",
+      "Dishwasher",
+      "Freezer",
+      "Hot water kettle"
+    ],
+    "Family amenities": [
+      "Baby bath",
+      "Board games",
+      "Childrens playroom",
+      "Childrens books and toys",
+      "Childrens dinnerware",
+      "Crib",
+      "Outdoor playground",
+      "Window guards"
+    ],
+    "Heating and cooling amenities": [
+      "Air conditioning",
+      "Ceiling fan",
+      "Heating",
+      "Portable fans"
+    ]
+  },
+  "propertyType": "",
+  "propertyCategories": [],
+  "address": "2200 North Ocean Boulevard, Myrtle Beach, SC, USA",
+  "counters": {
+    "bedrooms": 3,
+    "bathrooms": 4,
+    "guests": 6,
+    "beds": 4
+  },
+  "createdAt": "2025-06-24T14:20:42.287Z",
+  "updatedAt": "2025-07-31T14:08:42.739Z"
+}
