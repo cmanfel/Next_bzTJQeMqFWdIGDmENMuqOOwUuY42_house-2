@@ -1,6 +1,6 @@
 "use client";
-import React from "react";
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import { motion, useReducedMotion } from 'framer-motion';
 import CardsList from "../components/CardsList";
 import listing from "../data/listing.json";
 import { convertToFileName } from "../app/utils/strings";
@@ -23,15 +23,29 @@ const categories = [
   ];
 
 function AmenitiesPage() {
+  const shouldReduceMotion = useReducedMotion();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
   const containerVariants = {
-    hidden: { opacity: 0.3, scale: 0.95 },
+    hidden: { opacity: 0.3, scale: isMobile ? 0.98 : 0.95 },
     visible: {
       opacity: 1,
       scale: 1,
       transition: {
-        duration: 0.5,
+        duration: shouldReduceMotion ? 0 : (isMobile ? 0.7 : 0.5),
         ease: "easeOut",
-        staggerChildren: 0.15  // Slightly longer stagger for amenity categories
+        staggerChildren: shouldReduceMotion ? 0 : (isMobile ? 0.2 : 0.15)
       }
     }
   };
@@ -39,15 +53,15 @@ function AmenitiesPage() {
   const categoryVariants = {
     hidden: { 
       opacity: 0, 
-      y: 30,
-      scale: 0.95
+      y: isMobile ? 20 : 30,
+      scale: isMobile ? 0.98 : 0.95
     },
     visible: {
       opacity: 1,
       y: 0,
       scale: 1,
       transition: { 
-        duration: 0.6, 
+        duration: shouldReduceMotion ? 0 : (isMobile ? 0.7 : 0.6), 
         ease: [0.25, 0.46, 0.45, 0.94]  // Custom easing for smooth entrance
       }
     }
@@ -60,13 +74,27 @@ function AmenitiesPage() {
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.2 }}
+      onViewportEnter={() => {
+        if (isMobile) {
+          console.log('Amenities entering viewport on mobile');
+        }
+      }}
+      viewport={{ 
+        once: false, 
+        amount: isMobile ? 0.05 : 0.2,
+        margin: isMobile ? "0px 0px -20px 0px" : "0px 0px -50px 0px",
+        root: null
+      }}
     >
       <motion.div 
         className="overview-text"
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true, amount: 0.3 }}
+        viewport={{ 
+          once: false,
+          amount: isMobile ? 0.05 : 0.3,
+          margin: isMobile ? "0px 0px -20px 0px" : "0px 0px -50px 0px"
+        }}
         transition={{ duration: 0.5, ease: "easeOut" }}
       >
         <h2>Amenities</h2>
@@ -77,7 +105,12 @@ function AmenitiesPage() {
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.1 }}
+        viewport={{ 
+          once: false,
+          amount: isMobile ? 0.05 : 0.1,
+          margin: isMobile ? "0px 0px -20px 0px" : "0px 0px -50px 0px",
+          root: null
+        }}
       >
         {categories.map((category) => {
           const amenities = listing.amentiesCategories[category];

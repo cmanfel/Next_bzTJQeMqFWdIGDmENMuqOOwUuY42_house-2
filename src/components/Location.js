@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion, useReducedMotion } from 'framer-motion';
 import '../App.css';
 import locationData from '../data/location.json';
 import GalleryCard from './GalleryCard';
@@ -24,26 +24,39 @@ function generateDescriptions(categories) {
 
 function Location() {
   const [mapLoaded, setMapLoaded] = useState(false);
+  const shouldReduceMotion = useReducedMotion();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
   
   const containerVariants = {
-    hidden: { opacity: 0.3, x: 25 },
+    hidden: { opacity: 0.3, x: isMobile ? 20 : 25 },
     visible: {
       opacity: 1,
       x: 0,
       transition: {
-        duration: 0.5,
+        duration: shouldReduceMotion ? 0 : (isMobile ? 0.7 : 0.5),
         ease: "easeOut",
-        staggerChildren: 0.1
+        staggerChildren: shouldReduceMotion ? 0 : (isMobile ? 0.15 : 0.1)
       }
     }
   };
 
   const itemVariants = {
-    hidden: { opacity: 0.5, y: 15 },
+    hidden: { opacity: 0.5, y: isMobile ? 10 : 15 },
     visible: {
       opacity: 1,
       y: 0,
-      transition: { duration: 0.4, ease: "easeOut" }
+      transition: { duration: shouldReduceMotion ? 0 : (isMobile ? 0.6 : 0.4), ease: "easeOut" }
     }
   };
 
@@ -63,7 +76,17 @@ function Location() {
       variants={containerVariants}
       initial="hidden"
       whileInView="visible"
-      viewport={{ once: true, amount: 0.3 }}
+      onViewportEnter={() => {
+        if (isMobile) {
+          console.log('Location entering viewport on mobile');
+        }
+      }}
+      viewport={{ 
+        once: false,
+        amount: isMobile ? 0.05 : 0.3, 
+        margin: isMobile ? "0px 0px -20px 0px" : "0px 0px -50px 0px",
+        root: null
+      }}
     >
       <motion.h2 variants={itemVariants}>Location</motion.h2>
       <motion.div className="map-container" variants={itemVariants}>
