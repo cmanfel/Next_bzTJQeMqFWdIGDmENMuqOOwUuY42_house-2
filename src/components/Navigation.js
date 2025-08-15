@@ -15,6 +15,7 @@ function Navigation() {
         <a href={baseUrl} target="_blank" rel="noopener noreferrer">Rates</a>
         <a href={baseUrl} target="_blank" rel="noopener noreferrer">Availability</a>
         <a href={baseUrl} target="_blank" rel="noopener noreferrer">Contact</a>
+        <a href={baseUrl} target="_blank" rel="noopener noreferrer" className="nav-book-button">Book It</a>
     </nav>
   );
 }
