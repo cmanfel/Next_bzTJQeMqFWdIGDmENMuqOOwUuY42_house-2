@@ -24,12 +24,14 @@ html, body {
   font-family: Arial, sans-serif;
   background-color: var(--text-color);
   color: var(--default-text-color);
+  overflow-x: hidden; /* Prevent horizontal scrolling issues on mobile */
 }
 
 #root {
   display: flex;
   flex-direction: column;
   height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling issues on mobile */
 }
 
 .App {
