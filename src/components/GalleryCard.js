@@ -1,8 +1,11 @@
 "use client";
 
 import React, { useState } from 'react';
+import { motion } from 'framer-motion';
 import Lightbox from 'yet-another-react-lightbox';
+import Captions from 'yet-another-react-lightbox/plugins/captions';
 import 'yet-another-react-lightbox/styles.css';
+import 'yet-another-react-lightbox/plugins/captions.css';
 
 function buildImageUrl(url) {
   if (url.startsWith('/')) {
@@ -13,12 +16,17 @@ function buildImageUrl(url) {
 
 function GalleryCard({ feature, urls, titles = [], descriptions = [], cardsPerRow = 2 }) {
   const [open, setOpen] = useState(false);
+  const [loadedImages, setLoadedImages] = useState(new Set());
 
   const slides = urls.map((url, index) => ({
     src: buildImageUrl(url),
     title: titles[index] || '',
     description: descriptions[index] || '',
-    caption: `${titles[index] || ''} - ${descriptions[index] || ''}`
+    alt: `${feature} ${index + 1}`,
+    // Use the built-in caption property
+    caption: titles[index] && descriptions[index] 
+      ? `${titles[index]} - ${descriptions[index]}` 
+      : titles[index] || descriptions[index] || ''
   }));
 
   // Calculate the appropriate grid template columns based on cardsPerRow
@@ -26,42 +34,99 @@ function GalleryCard({ feature, urls, titles = [], descriptions = [], cardsPerRo
     gridTemplateColumns: `repeat(${cardsPerRow}, 1fr)`,
   };
 
+  // Handle image load
+  const handleImageLoad = (index) => {
+    setLoadedImages(prev => new Set([...prev, index]));
+  };
+
+  // Container animation variants for stagger effect
+  const containerVariants = {
+    hidden: { opacity: 0 },
+    visible: {
+      opacity: 1,
+      transition: {
+        duration: 0.3,
+        staggerChildren: 0.15,
+        delayChildren: 0.2
+      }
+    }
+  };
+
+  // Individual card animation variants
+  const cardVariants = {
+    hidden: { 
+      opacity: 0, 
+      scale: 0.8,
+      y: 40
+    },
+    visible: {
+      opacity: 1,
+      scale: 1,
+      y: 0,
+      transition: { 
+        duration: 0.6, 
+        ease: [0.25, 0.46, 0.45, 0.94]  // Custom cubic-bezier for smooth entrance
+      }
+    }
+  };
+
   return (
     <div className="gallery-card">
       <h3>{feature}</h3>
-      <div className="gallery-grid" style={gridStyle}>
+      <motion.div 
+        className="gallery-grid" 
+        style={gridStyle}
+        variants={containerVariants}
+        initial="hidden"
+        whileInView="visible"
+        viewport={{ once: true, amount: 0.2 }}
+      >
         {urls.map((url, index) => (
-          <div key={index} className="grid-item" style={{ height: cardsPerRow <= 2 ? '400px' : '200px' }}>
-            <img
+          <motion.div 
+            key={index} 
+            className="grid-item" 
+            style={{ height: cardsPerRow <= 2 ? '400px' : '200px' }}
+            variants={cardVariants}
+            whileHover={{ 
+              scale: 1.03,
+              y: -5,
+              transition: { duration: 0.3 }
+            }}
+            whileTap={{ scale: 0.97 }}
+          >
+            <motion.img
               src={buildImageUrl(url)}
               alt={`${feature} ${index + 1}`}
               className="thumbnail"
               onClick={() => setOpen(true)}
+              onLoad={() => handleImageLoad(index)}
+              initial={{ opacity: 0 }}
+              animate={{ opacity: loadedImages.has(index) ? 1 : 0 }}
+              transition={{ duration: 0.4, delay: 0.1 }}
             />
             {(titles[index] || descriptions[index]) && (
-              <div className="overlay">
+              <motion.div 
+                className="overlay"
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ 
+                  opacity: loadedImages.has(index) ? 1 : 0,
+                  y: loadedImages.has(index) ? 0 : 10
+                }}
+                transition={{ duration: 0.4, delay: 0.3 }}
+              >
                 {titles[index] && <h4 className="overlay-title">{titles[index]}</h4>}
                 {descriptions[index] && <p className="overlay-description">{descriptions[index]}</p>}
-              </div>
+              </motion.div>
             )}
-          </div>
+          </motion.div>
         ))}
-      </div>
+      </motion.div>
       {open && (
         <Lightbox
           open={open}
           close={() => setOpen(false)}
           slides={slides}
-          render={{
-            slide: ({ slide }) => (
-              <div className="lightbox-slide">
-                <img src={slide.src} alt={slide.title} className="lightbox-image" />
-                <div className="lightbox-overlay">
-                  {slide.caption && <p className="lightbox-description">{slide.caption}</p>}
-                </div>
-              </div>
-            )
-          }}
+          plugins={[Captions]}
         />
       )}
     </div>

@@ -1,5 +1,6 @@
 "use client";
 import React from 'react';
+import { motion } from 'framer-motion';
 import '../App.css';
 import texts from '../data/texts.json';
 import photos from '../data/photos.json';
@@ -17,13 +18,42 @@ function Overview() {
     descriptions: [texts.indoor, texts.outdoor]
   };
 
+  const containerVariants = {
+    hidden: { opacity: 0.3, y: 30 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: {
+        duration: 0.5,
+        ease: "easeOut",
+        staggerChildren: 0.1
+      }
+    }
+  };
+
+  const itemVariants = {
+    hidden: { opacity: 0.5, y: 15 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: 0.4, ease: "easeOut" }
+    }
+  };
+
   return (
-    <section id="overview" className="overview-section">
-      <div className="overview-text">
+    <motion.section
+      id="overview"
+      className="overview-section"
+      variants={containerVariants}
+      initial="hidden"
+      whileInView="visible"
+      viewport={{ once: true, amount: 0.3 }}
+    >
+      <motion.div className="overview-text" variants={itemVariants}>
         <h2>Overview</h2>
         <p>{texts.description}</p>
-      </div>
-      <div className="overview-content centered-content">
+      </motion.div>
+      <motion.div className="overview-content centered-content" variants={itemVariants}>
         {/* Single GalleryCard with both indoor and outdoor images */}
         <GalleryCard 
           feature={overviewGallery.feature}
@@ -31,8 +61,8 @@ function Overview() {
           titles={overviewGallery.titles}
           descriptions={overviewGallery.descriptions}
         />
-      </div>
-    </section>
+      </motion.div>
+    </motion.section>
   );
 }
 
