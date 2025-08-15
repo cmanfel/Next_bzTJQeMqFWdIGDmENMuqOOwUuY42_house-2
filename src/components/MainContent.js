@@ -17,6 +17,7 @@ function MainContent() {
 
   return (
     <main 
+      id="home"
       className="App-main"
       style={{
         backgroundImage: imageLoaded ? `url(${mainPhotoUrl})` : 'none'
