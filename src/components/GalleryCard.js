@@ -1,7 +1,7 @@
 "use client";
 
-import React, { useState } from 'react';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from 'react';
+import { motion, useReducedMotion } from 'framer-motion';
 import Lightbox from 'yet-another-react-lightbox';
 import Captions from 'yet-another-react-lightbox/plugins/captions';
 import 'yet-another-react-lightbox/styles.css';
@@ -17,6 +17,19 @@ function buildImageUrl(url) {
 function GalleryCard({ feature, urls, titles = [], descriptions = [], cardsPerRow = 2 }) {
   const [open, setOpen] = useState(false);
   const [loadedImages, setLoadedImages] = useState(new Set());
+  const shouldReduceMotion = useReducedMotion();
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+    
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
 
   const slides = urls.map((url, index) => ({
     src: buildImageUrl(url),
@@ -41,13 +54,13 @@ function GalleryCard({ feature, urls, titles = [], descriptions = [], cardsPerRo
 
   // Container animation variants for stagger effect
   const containerVariants = {
-    hidden: { opacity: 0 },
+    hidden: { opacity: isMobile ? 0.5 : 0 },
     visible: {
       opacity: 1,
       transition: {
-        duration: 0.3,
-        staggerChildren: 0.15,
-        delayChildren: 0.2
+        duration: shouldReduceMotion ? 0 : (isMobile ? 0.5 : 0.3),
+        staggerChildren: shouldReduceMotion ? 0 : (isMobile ? 0.2 : 0.15),
+        delayChildren: shouldReduceMotion ? 0 : (isMobile ? 0.1 : 0.2)
       }
     }
   };
@@ -55,16 +68,16 @@ function GalleryCard({ feature, urls, titles = [], descriptions = [], cardsPerRo
   // Individual card animation variants
   const cardVariants = {
     hidden: { 
-      opacity: 0, 
-      scale: 0.8,
-      y: 40
+      opacity: isMobile ? 0.3 : 0, 
+      scale: isMobile ? 0.95 : 0.8,
+      y: isMobile ? 20 : 40
     },
     visible: {
       opacity: 1,
       scale: 1,
       y: 0,
       transition: { 
-        duration: 0.6, 
+        duration: shouldReduceMotion ? 0 : (isMobile ? 0.8 : 0.6), 
         ease: [0.25, 0.46, 0.45, 0.94]  // Custom cubic-bezier for smooth entrance
       }
     }
@@ -79,7 +92,17 @@ function GalleryCard({ feature, urls, titles = [], descriptions = [], cardsPerRo
         variants={containerVariants}
         initial="hidden"
         whileInView="visible"
-        viewport={{ once: true, amount: 0.2 }}
+        onViewportEnter={() => {
+          if (isMobile) {
+            console.log(`${feature} GalleryCard entering viewport on mobile`);
+          }
+        }}
+        viewport={{ 
+          once: false, 
+          amount: isMobile ? 0.05 : 0.2,
+          margin: isMobile ? "0px 0px -20px 0px" : "0px 0px -50px 0px",
+          root: null
+        }}
       >
         {urls.map((url, index) => (
           <motion.div 

@@ -60,6 +60,16 @@ function Location() {
     }
   };
 
+  // Special variants for GalleryCard to ensure visibility on mobile
+  const galleryCardVariants = {
+    hidden: { opacity: isMobile ? 0.8 : 0.5, y: isMobile ? 5 : 15 },
+    visible: {
+      opacity: 1,
+      y: 0,
+      transition: { duration: shouldReduceMotion ? 0 : (isMobile ? 0.8 : 0.4), ease: "easeOut" }
+    }
+  };
+
   const mapImageVariants = {
     hidden: { opacity: 0, scale: 0.9 },
     visible: {
@@ -109,12 +119,27 @@ function Location() {
           View on Google Maps
         </a>
       </motion.div>
-      <motion.div variants={itemVariants}>
+      <motion.div 
+        variants={galleryCardVariants}
+        style={{ 
+          minHeight: isMobile ? 'auto' : 'unset',
+          overflow: 'visible',
+          width: '100%',
+          display: 'block',
+          position: 'relative'
+        }}
+        onViewportEnter={() => {
+          if (isMobile) {
+            console.log('Location GalleryCard entering viewport on mobile');
+          }
+        }}
+      >
         <GalleryCard 
           feature="Nearby places" 
           urls={generatePhotoUrls(locationData.nearbyCategories)} 
           titles={generateTitles(locationData.nearbyCategories)} 
-          descriptions={generateDescriptions(locationData.nearbyCategories)} 
+          descriptions={generateDescriptions(locationData.nearbyCategories)}
+          cardsPerRow={isMobile ? 1 : 2}
         />
       </motion.div>
     </motion.section>
